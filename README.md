@@ -1,6 +1,6 @@
 # source-code-agent
 
-Agent(s) and tooling for working with source code. (confirm/refine)
+Agent(s) and tooling for working with source code.
 
 ## Claude Code setup
 
