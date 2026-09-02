@@ -1,6 +1,6 @@
 ---
 name: Code Knowledge Agent — effort index
-description: "Routing index for the code knowledge agent effort in this repository: the build plan, the S0 de-risking spike results, and the tree-sitter binding migration, with a note on what this scrubbed copy omits."
+description: "Routing index for the code knowledge agent effort: the build plan and resume point, the de-risking spike results, and the parser-binding migration, with the version-selection rule a consumer applies."
 id: index:datadog-code-knowledge-agent:effort
 tags: [type:index, topic:tooling, status:complete, privacy:public]
 links: [project:tooling:datadog-code-knowledge-agent]
@@ -11,16 +11,16 @@ updated: 2026-09-02T00:00:00Z
 
 Three planning documents for a citation-backed question-answering agent over public source code.
 
-- `plan.md` — the build plan and resume point. All planned phases are done. The remaining work is per-repo build-out.
+- `plan.md` — the build plan and resume point. All planned phases are done, and the remaining work is per-repository build-out.
 - `S0-findings.md` — the de-risking spike results, which `plan.md` section 9 cites. It holds the A/B proof that split the indexed text from the citable text, and the version-churn measurement.
 - `spike-10.8-tree-sitter-migration.md` — the migration off an unmaintained parser binding, with its own A/B table. That table, not the plan's older counts, is the chunk-count baseline.
 
-## What this copy omits
+## Choosing which versions to index
 
-This is a scrubbed copy, prepared for public release. Every reference to a vendor-internal source, identifier, or measurement is removed, and the technical design is unchanged.
+The plan bounds its version set by how widely each version runs, and no public source reports that. Apply the public rule instead: take each repository's released tags, and index backward from the latest until the list is exhausted or the per-repository cap is reached.
 
-One consequence is worth stating plainly. The plan bounds its version set by usage data, and that input is vendor-internal. A public consumer substitutes a public rule: take each repository's released tags, and index backward from the latest.
+One case stays exact. A shared core library is vendored rather than installed, so its version set is derived from the tracer releases that pin it, and every one of those pins is public.
 
 ## Open items
 
-Findings swept out of these documents are filed as LED entries in this repository's own `.dat/feedback-register.json`. The documents stay as the historical record.
+Findings from these documents are filed as entries in this repository's own `.dat/feedback-register.json`. The documents stay as the historical record.

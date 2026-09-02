@@ -21,7 +21,7 @@ updated: 2026-06-23T22:00:00Z
 
 ## Verified facts (inspected on cloned upstream, not from memory)
 
-Clones for reference: `<local-clones>`.
+Clones for reference: the local clones.
 
 - **Runtime** `github.com/tree-sitter/go-tree-sitter` latest tag **v0.24.0**; bundles the core C (`src/lib.c`). Core **`TREE_SITTER_LANGUAGE_VERSION` 15, `MIN_COMPATIBLE` 13** → loads ABI 13/14/15 grammars. cgo + C compiler still required (unchanged).
 - **ABI policy:** runtime is **ABI 15 — the latest** (v0.24.0 is the newest official Go-binding release; there is no "newer" to target, 15 is the ceiling not a floor). We do **not** force grammars to 15: each grammar uses its latest-stable ABI and the runtime loads anything ≥13. Current spread — ABI 15: python/go/js/c#/rust/c/cpp/php/dart; ABI 14: java/ruby/typescript/kotlin/swift. An all-ABI-15 grammar set is impossible (java/ruby/ts/kotlin/swift have no ABI-15 release) and unnecessary.
