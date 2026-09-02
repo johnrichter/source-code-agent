@@ -1,13 +1,13 @@
 ---
-name: Code Knowledge Agent — effort index
-description: "Routing index for the code knowledge agent effort: the build plan and resume point, the de-risking spike results, and the parser-binding migration, with the version-selection rule a consumer applies."
-id: index:datadog-code-knowledge-agent:effort
+name: Source Code Agent — effort index
+description: "Routing index for the source-code agent effort: the build plan and resume point, the de-risking spike results, and the parser-binding migration, with the version-selection rule a consumer applies."
+id: index:source-code-agent:effort
 tags: [type:index, topic:tooling, status:complete, privacy:public]
-links: [project:tooling:datadog-code-knowledge-agent]
+links: [project:tooling:source-code-agent]
 updated: 2026-09-02T00:00:00Z
 ---
 
-# Code Knowledge Agent — effort index
+# Source Code Agent — effort index
 
 Three planning documents for a citation-backed question-answering agent over public source code.
 

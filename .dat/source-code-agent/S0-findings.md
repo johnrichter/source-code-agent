@@ -1,7 +1,7 @@
 ---
 name: S0 Spike Findings — Datadog Code Knowledge Agent
 description: "S0 de-risking spike results (plan.md §9) on dd-trace-py + dd-trace-go. Code-RAG retrieval recall, citation integrity, IndexText/Text split, version-interval storage cost vs fixed go/no-go bar."
-id: project:tooling:datadog-code-knowledge-agent-s0-findings
+id: project:tooling:source-code-agent-s0-findings
 tags: [type:report, topic:tooling, topic:apm, status:complete, privacy:public]
 links: []
 updated: 2026-06-22T00:00:00Z

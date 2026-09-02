@@ -1,7 +1,7 @@
 ---
 name: "Spike 10.8 — tree-sitter binding migration (smacker → official)"
 description: "Tracking plan for migrating the code chunker off the unmaintained smacker/go-tree-sitter (ABI 14) to the official tree-sitter/go-tree-sitter (ABI 15). Verified dep matrix, full-rewrite transform spec, single-pass validation goldens, risk register, live progress log. Read before working spike 10.8."
-id: project:datadog-code-knowledge-agent:tree-sitter-migration
+id: project:source-code-agent:tree-sitter-migration
 tags:
   - type:project
   - topic:tooling
@@ -9,7 +9,7 @@ tags:
   - status:complete
   - privacy:public
 links:
-  - agent:datadog-code-knowledge-agent:build-plan
+  - agent:source-code-agent:build-plan
 updated: 2026-06-23T22:00:00Z
 ---
 
